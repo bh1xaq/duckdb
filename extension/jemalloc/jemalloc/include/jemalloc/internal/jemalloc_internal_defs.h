@@ -270,6 +270,9 @@
 #define LG_PAGE 16 // Use max known page size for ARM
 #endif
 
+#elif defined(__loongarch64)
+#define LG_PAGE 14 // LoongArch64 uses a 16KB page size
+
 #else
 #define LG_PAGE 12 // Default to the most common page size of 4KB
 #endif
